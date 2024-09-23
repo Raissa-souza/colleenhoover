@@ -1,0 +1,129 @@
+*{
+   margin: 0; /*altera a margem */
+   padding: 0; /*altera a lateral,espaçamento da borda */
+   box-sizing: border-box; /*modelo de caixa*/
+}
+
+body{
+    font-family: Arial, sans-serif; /*altera a fonte */
+    line-height: 1.6; /*altera a altura da fonte */
+    background-color: #db71d6; /*cor de fundo */
+}
+
+nav{
+    position: fixed; /*fixou a barra de navegação */
+    top: 0px; /* espaçamento a partir do topo */
+    width: 100%; /* largura */
+    background-color: #bdb5b542;
+    padding: 20px 0; /*espaçamento vertical e horizontal */
+}
+
+nav ul {
+    list-style-type: none; /*sem marcador,disc,square..*/
+    display: flex; /*mudou a organização da barra,verticalmente */
+    justify-content: center; /* alinhamento horizontal,inf da barra para o centro */
+}
+
+nav ul li{
+    margin: 0 20px; /* separou as palavras da nav */
+
+}
+
+nav ul li a{
+    color: #111111; /*cor do texto da nav*/
+    text-decoration: none; /*altera a linha sob as palavras da nav, sem sublinhar*/
+    font-size: 18px; /*muda o tamanho da fonte da nav */
+    padding: 10px; /*altera o espaçamento entre as palavras */
+    transition: color 0.3; /*muda a cor ao passar o mouse acima*/
+}
+
+nav ul li a:hover{
+    color: #ffacf1; /*altera a cor da palavras da nav */
+}
+
+section:not(#home){ /*formata tds as seções menos a home*/
+    padding: 100px 20px; /*muda a distância entre a imagem e os textos */
+    text-align: center; /*coloca o texto e a imagem no centro */
+    display: flex; /*mudou a organização da barra,verticalmente */
+    justify-content: center;  /* alinhamento horizontal,inf para o centro */
+    align-items: center; /*itens ao centro*/
+    height: 100vh; /* distancia, altura entre uma seção e outra */
+    
+
+    
+}
+
+#home{
+    /* background-color: #4a90e2; */
+    background-image: url(https://images.pexels.com/photos/1831234/pexels-photo-1831234.jpeg?cs=srgb&dl=pexels-mdsnmdsnmdsn-1831234.jpg&fm=jpg);
+    background-size: cover; /*foto cobriu toda a area */
+    background-repeat: no-repeat; /*n repetir*/
+    color: #362525;
+    height: 100vh; /* altura do texto */
+    text-align:center; /* colocou texto no centro da home */
+    display: flex; /* colocou do lado */
+    flex-direction: column; /* o conteudo se organizou em coluna*/
+    justify-content:center ; /*colocou os textos no meio*/
+    align-items: center; /*button*/
+    font-size: 1.1em; /*fonte maior*/
+
+}
+
+.Colleen{
+    border-radius: 15px;
+}
+.content{
+    display: flex; /*texto ao lado da img*/
+    flex-direction: row; /*em linha*/
+    align-items: center; /*texto no meio*/
+}
+
+.content img{
+    width: 400px; /*mudou a larg*/
+    height: 300px; /*mudou a altura*/
+    object-fit: cover; /*n perder a proporção*/
+    margin-right: 20px; 
+    border-radius: 8px; /*borda redonda*/
+}
+
+.content .text{
+    max-width: 600px;
+    text-align: left; /*subtitulo alinhado com o texto*/
+}
+
+.content .text h2 {
+    font-size: 2em;
+    margin-bottom: 20px; /*margin de baixo*/
+    color: #333; /*cor subtitulo*/
+}
+
+.content .text p {
+    font-size: 1.1em; /*texto*/
+    color: #555;
+}
+
+#livro1{
+    background-color: #ebbdd6;
+}
+
+#livro2{
+    background-color: #eb94c5;
+
+}
+
+#livro3{
+    background-color: #ebbdd6;
+}
+ .cta-button{
+    margin-top: 30px; /*altura do button*/
+    background-color: #e6c0eb; /*cor do button*/
+    color: rgb(0, 0, 0);
+    padding: 15px 30px; /*tamanho do button*/
+    font-size: 18px; /*tamanho da fonte*/
+    border: none;  /*sem borda*/
+    border-radius: 15px; /*borda */
+    cursor: pointer; /* como fica o ponteiro do mouse sobre*/
+    box-shadow: 0px 4px 6px rgb(226, 170, 222);
+    transition: background-color 1s ease, transform 1s ease;
+ }
+
